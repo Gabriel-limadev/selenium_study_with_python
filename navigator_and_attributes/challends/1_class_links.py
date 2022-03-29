@@ -1,5 +1,5 @@
 """
-TODO: 1. Take all class links -> {'class name': 'link da aula'}
+TODO: 1. Take all class links -> {'class name': 'class link'}
 TODO: 2. Navigate to Exercise 3 -> find the url of exercise 3 and go there
 """
 
@@ -18,7 +18,7 @@ def get_links(browser, element):
     """ Take all links inside an element
 
     Args:
-        browser (object): browser intancia
+        browser (object): browser instance
         element (str): webelement ['aside', 'main', 'body']
     """
     result = {}
@@ -39,4 +39,3 @@ pprint(classes)
 # 2 PART
 exercises = get_links(browser, 'main')
 browser.get(exercises['Exercício 3'])
-
