@@ -9,10 +9,10 @@ b.maximize_window()
 
 b.find_element(By.CSS_SELECTOR, '#alert').click()
 
-# Handles errors well -- Imports once and that's enough
+# Lida bem com erros -- Importa uma vez e já é o suficiente
 alert = Alert(b) 
 
-## no import, no error handling -- Use whenever alerting
+## sem importação, Não lida com erros -- Uso sempre que for utilizar alerta
 # alert = b.switch_to.alert -> 
 
 print(f'The alert is "{alert.text}"')
